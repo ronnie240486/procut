@@ -1,7 +1,46 @@
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#0f172a">
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').catch(console.error);
-  }
-</script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu App</title>
+
+  <!-- Conexão com o manifesto -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Registro do Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log("SW registrado!"))
+        .catch(console.error);
+    }
+  </script>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu App</title>
+
+  <!-- Conexão com o manifesto -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
+
+  <!-- Registro do Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log("SW registrado!"))
+        .catch(console.error);
+    }
+  </script>
+</head>
+<body>
+  <!-- seu HTML, CSS e JS inline -->
+</body>
+</html>
+
+</body>
+</html>
